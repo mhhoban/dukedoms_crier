@@ -2,6 +2,7 @@ version: '3'
 
 services:
   rabbitmq:
-    image: rabbitmq
+    build: .
     ports:
       - "5672:5672"
+      - "15674:15674"
